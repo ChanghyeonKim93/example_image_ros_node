@@ -3,15 +3,15 @@
 #include <iostream>
 #include <string>
 
-#include "wheelchair_nav_ros.h"
+#include "image_node_ros.h"
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "wheelchair_nav_node");
+    ros::init(argc, argv, "image_node_ros");
     ros::NodeHandle nh("~");
-    ROS_INFO_STREAM("START: \"wheelchair_nav_node node\".\n");
+    ROS_INFO_STREAM("START: \"image_node_ros node\".\n");
     
-    WheelchairNavROS wcros(nh);
+    ImageNodeROS img_node_ros(nh);
  
-    ROS_INFO_STREAM("wheelchair_nav_node - TERMINATE.");
+    ROS_INFO_STREAM("image_node_ros - TERMINATE.");
     return -1;
 }

@@ -2,7 +2,7 @@
 
 
 ImageNodeROS::ImageNodeROS(const ros::NodeHandle& nh)
-: nh_(nh), topicname_image_(""),topicname_local_path_("")
+: nh_(nh), topicname_image_("")
 {
     // Check whether needed parameters exist or not.
     if(ros::param::has("~topicname_image"))
